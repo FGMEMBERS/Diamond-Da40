@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="da40-jsbsim-cnf.xml"> -->
+<PropertyList include="da40-yasim-cnf.xml">
+
+  <sim>
+    
+    <description>Diamond DA 40 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    
+  </sim>
+
+</PropertyList>
+
