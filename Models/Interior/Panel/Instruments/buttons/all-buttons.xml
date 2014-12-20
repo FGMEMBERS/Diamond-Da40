@@ -40,11 +40,13 @@
     <object-name>luminosite</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
-      <red>   0.80 </red>
-      <green> 0.50 </green>
-      <blue>  0.50 </blue>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -303,8 +305,8 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/lighting/panel-dim</property>
-        <step> 0.01 </step>
+        <property>/controls/lighting/floods-lights</property>
+        <step> 0.1 </step>
         <min> 0 </min>
         <max> 1 </max>
         <wrap>false</wrap>
@@ -315,8 +317,8 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/lighting/panel-dim</property>
-        <step> -0.01 </step>
+        <property>/controls/lighting/floods-lights</property>
+        <step> -0.1 </step>
         <min> 0 </min>
         <max> 1 </max>
         <wrap>false</wrap>
@@ -327,7 +329,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>luminosite</object-name>
-    <property>controls/lighting/panel-dim</property>
+    <property>controls/lighting/floods-lights</property>
     <factor> 270 </factor>
     <center>
       <x-m>  0.003373 </x-m>

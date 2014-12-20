@@ -33,18 +33,20 @@
     <object-name>KLN90B.screen</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
-      <red>   0.80 </red>
-      <green> 0.50 </green>
-      <blue>  0.50 </blue>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
   <!--    OSG hotspots  -->
   <panel>
     <name>GPS screen</name>
-    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/gps/gps.xml</path>
+    <path>Aircraft/Diamond-Da40/Models/Interior/Panel/Instruments/gps/gps.xml</path>
     <bottom-left>
       <x-m>  0.003 </x-m>
       <y-m> -0.033 </y-m>

@@ -13,7 +13,7 @@
   Cruise speed :     150 kt (   279 km/h )
 -->
 
-<airplane mass="1755">
+<airplane mass="1755" version="YASIM_VERSION_CURRENT">
 
   <!-- Approach configuration -->
   <approach speed="50" aoa="6" fuel="0.3">
@@ -111,12 +111,12 @@
                             alt="20000" 
                             eng-power="180" 
                             displacement="361" 
-                            compression="8.5"/>
-             <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-             <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
-             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
-             <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+                            compression="8.5">
+                            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+                            <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+                            <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+             </piston-engine>
   </propeller>
 
   <gear x="3.03323" y="0.07385" z="-0.98883" 

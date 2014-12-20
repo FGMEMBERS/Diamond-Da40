@@ -10,6 +10,7 @@
     <object-name>inttour</object-name>
     <object-name>intcanopy</object-name>
     <object-name>intporte</object-name>
+    <object-name>planchet</object-name>
     
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
@@ -17,33 +18,14 @@
     <object-name>intvitreporte</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-    <object-name>intverriere</object-name>
-    <object-name>intvitreporte</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intvitres</object-name>
-    <object-name>intverriere</object-name>
-    <object-name>intvitreporte</object-name>
-  </animation>
-
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/Diamond-Da40/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intverriere</object-name>
     <object-name>intvitreporte</object-name>
   </effect>
-
+  
   <!-- Tableau de bord -->
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Panel/panel.xml</path>
@@ -70,77 +52,77 @@
     <offsets>
       <x-m> -1.50692 </x-m>
       <y-m> -0.26638 </y-m>
-      <z-m> -0.07268 </z-m>
+      <z-m> -0.04268 </z-m>
     </offsets>
   </model>
 
-  <!-- Passager seat -->
+  <!-- Copilot seat -->
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Seats/seat.xml</path>
     <offsets>
       <x-m> -1.50692 </x-m>
       <y-m>  0.26638 </y-m>
-      <z-m> -0.07268 </z-m>
+      <z-m> -0.04268 </z-m>
     </offsets>
   </model>
 
   <!-- Rear left seat -->
   <model>
-    <path>Aircraft/Diamond-Da40/Models/Interior/Seats/seat.xml</path>
+    <path>Aircraft/Diamond-Da40/Models/Interior/Seats/rearseat.xml</path>
     <offsets>
       <x-m> -0.39183 </x-m>
       <y-m> -0.24638 </y-m>
-      <z-m> -0.06572 </z-m>
+      <z-m> -0.03572 </z-m>
     </offsets>
   </model>
 
   <!-- Rear right seat -->
   <model>
-    <path>Aircraft/Diamond-Da40/Models/Interior/Seats/seat.xml</path>
+    <path>Aircraft/Diamond-Da40/Models/Interior/Seats/rearseat.xml</path>
     <offsets>
       <x-m> -0.39183 </x-m>
       <y-m>  0.24638 </y-m>
-      <z-m> -0.06572 </z-m>
+      <z-m> -0.03572 </z-m>
     </offsets>
   </model>
 
-  <!-- Yokes
+  <!-- Yokes -->
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Panel/Instruments/Yoke/yoke.xml</path>
     <offsets>
-      <x-m> -1.92665 </x-m>
-      <y-m> -0.25201 </y-m>
-      <z-m> -0.23738 </z-m>
+      <x-m> -2.03554 </x-m>
+      <y-m> -0.26712 </y-m>
+      <z-m> -0.34553 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Panel/Instruments/Yoke/yoke.xml</path>
     <offsets>
-      <x-m> -1.92665 </x-m>
-      <y-m>  0.25201 </y-m>
-      <z-m> -0.23738 </z-m>
+      <x-m> -2.03554 </x-m>
+      <y-m>  0.26712 </y-m>
+      <z-m> -0.34553 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
-  <!-- Pedals
+  <!-- Pedals -->
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Panel/Instruments/Pedals/pedals.xml</path>
     <offsets>
-      <x-m> -2.31283 </x-m>
-      <y-m> -0.26985 </y-m>
-      <z-m> -0.23152 </z-m>
+      <x-m> -2.494 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m> -0.330 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Panel/Instruments/Pedals/pedals.xml</path>
     <offsets>
-      <x-m> -2.31283 </x-m>
-      <y-m>  0.26985 </y-m>
-      <z-m> -0.23152 </z-m>
+      <x-m> -2.494 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m> -0.330 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- Canopy -->
   <animation>

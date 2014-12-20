@@ -26,10 +26,10 @@
       </or>
     </condition>
     <emission>
+      <factor-prop>systems/electrical/volts</factor-prop>
       <red>   0.035 </red>
       <green> 0.035 </green>
       <blue>  0.035 </blue>
-      <factor-prop>systems/electrical/volts</factor-prop>
     </emission>
   </animation>
 
@@ -42,10 +42,10 @@
       <property>controls/lighting/warning-mode</property>
     </condition>
     <emission>
+      <factor-prop>systems/electrical/volts</factor-prop>
       <red>   0.012 </red>
       <green> 0.012 </green>
       <blue>  0.012 </blue>
-      <factor-prop>systems/electrical/volts</factor-prop>
     </emission>
   </animation>
 
@@ -102,5 +102,3 @@
   </animation>
   
 </PropertyList>
-
-
