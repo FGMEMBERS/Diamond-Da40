@@ -33,8 +33,8 @@ BARANGER Emmanuel
 March, 24, 2013.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-
 
 [Français]
 ----------
@@ -56,7 +56,6 @@ Poids à vide                  :
 Vitesse de croisière          :
 Equipage                      :
 
-
 Quelques touches utiles :
 =========================
 
@@ -70,4 +69,5 @@ BARANGER Emmanuel
 24 March 2013.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr

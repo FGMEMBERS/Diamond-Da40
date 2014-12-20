@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>yoke.ac</path>
-
+  
   <animation>
     <!-- Objets opaques -->
     <object-name>base</object-name>
@@ -11,7 +11,7 @@
     
     <!-- Objets transparents -->
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>yoke</object-name>
@@ -23,7 +23,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>yoke</object-name>
@@ -35,5 +35,5 @@
       <z> 0 </z>
     </axis>
   </animation>
-
- </PropertyList>
+  
+</PropertyList>

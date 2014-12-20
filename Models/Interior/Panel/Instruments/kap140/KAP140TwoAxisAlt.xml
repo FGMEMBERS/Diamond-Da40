@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!--
-_______________________________________________________________________________
-KAP140 Two Axis with Altitude Preselect autopilot instrument.
 
-3D version started 2007 by Ron Jensen, wino@jentronics.com.
-Based on 2D version started 2004 by Roy Vegard Ovesen, rvovesen@tiscali.no.
+<!-- ______________________________________________________________________________
+     KAP140 Two Axis with Altitude Preselect autopilot instrument.
 
-This is an instrument configuration file for the open-source flight
-simulator FlightGear (www.flightgear.org).  The file is an XML-encoded
-FlightGear property list defining the instrument's animations and actions.
+     3D version started 2007 by Ron Jensen, wino@jentronics.com.
+     Based on 2D version started 2004 by Roy Vegard Ovesen, rvovesen@tiscali.no.
 
-Actions are hotspots on the instrument that will respond to a mouse
-click.  Actions always modify the values of properties, either by
-adjusting them, toggling them, or swaping them with other
-properties' values.
+     This is an instrument configuration file for the open-source flight
+     simulator FlightGear (www.flightgear.org).  The file is an XML-encoded
+     FlightGear property list defining the instrument's animations and actions.
+
+     Actions are hotspots on the instrument that will respond to a mouse
+     click.  Actions always modify the values of properties, either by
+     adjusting them, toggling them, or swaping them with other
+     properties' values.
 -->
 <PropertyList>
 
@@ -99,11 +99,12 @@ properties' values.
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Diamond-Da40/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <name>annunciators</name>
     <object-name>roll-axis-fail</object-name>
@@ -199,12 +200,14 @@ properties' values.
     <object-name>inhg-digits</object-name>
     <object-name>annunciators</object-name>
     <condition>
-      <property>/controls/lighting/instrument-lights</property>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
     </emission>
   </animation>
 
@@ -215,12 +218,14 @@ properties' values.
     <object-name>base</object-name>
     <object-name>buttons</object-name>
     <condition>
-      <property>/controls/lighting/instrument-lights</property>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
-      <red>   0.2 </red>
-      <green> 0.1 </green>
-      <blue>  0.1 </blue>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -537,9 +542,9 @@ properties' values.
     <factor>-5800</factor>
     <step>0.000017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -557,9 +562,9 @@ properties' values.
     <factor>-580</factor>
     <step>0.00017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -577,9 +582,9 @@ properties' values.
     <factor>-58</factor>
     <step>0.0017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -597,9 +602,9 @@ properties' values.
     <factor>-5.8</factor>
     <step>0.017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -617,9 +622,9 @@ properties' values.
     <factor>5800</factor>
     <step>0.000017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -637,9 +642,9 @@ properties' values.
     <factor>580</factor>
     <step>0.00017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -657,9 +662,9 @@ properties' values.
     <factor>58</factor>
     <step>0.0017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -677,9 +682,9 @@ properties' values.
     <factor>5.8</factor>
     <step>0.017241379</step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -701,12 +706,12 @@ properties' values.
     <type>textranslate</type>
     <object-name>alt-digit1</object-name>
     <property>/autopilot/KAP140/settings/target-alt-ft</property>
-    <factor>0.00001</factor>
-    <step>10000</step>
+    <factor>   0.00001 </factor>
+    <step> 10000.00000 </step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -714,12 +719,12 @@ properties' values.
     <type>textranslate</type>
     <object-name>alt-digit2</object-name>
     <property>/autopilot/KAP140/settings/target-alt-ft</property>
-    <factor>0.0001</factor>
-    <step>1000</step>
+    <factor>  0.0001 </factor>
+    <step> 1000.0000 </step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -727,12 +732,12 @@ properties' values.
     <type>textranslate</type>
     <object-name>alt-digit3</object-name>
     <property>/autopilot/KAP140/settings/target-alt-ft</property>
-    <factor>0.001</factor>
-    <step>100</step>
+    <factor> 0.001 </factor>
+    <step> 100.000 </step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -740,12 +745,12 @@ properties' values.
     <type>textranslate</type>
     <object-name>alt-digit4</object-name>
     <property>/autopilot/KAP140/settings/target-alt-ft</property>
-    <factor>0.01</factor>
-    <step>10</step>
+    <factor> 0.01 </factor>
+    <step>  10.00 </step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -753,12 +758,12 @@ properties' values.
     <type>textranslate</type>
     <object-name>alt-digit5</object-name>
     <property>/autopilot/KAP140/settings/target-alt-ft</property>
-    <factor>0.1</factor>
-    <step>1</step>
+    <factor> 0.1 </factor>
+    <step>   1.0 </step>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -781,12 +786,12 @@ properties' values.
     <object-name>hpa-digit2</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>0.1</factor>
-    <step>1</step>
-    <bias>0.0005</bias>
+    <step> 1.0000 </step>
+    <bias> 0.0005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -795,12 +800,12 @@ properties' values.
     <object-name>hpa-digit3</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>1</factor>
-    <step>0.1</step>
-    <bias>0.0005</bias>
+    <step> 0.1000 </step>
+    <bias> 0.0005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -809,12 +814,12 @@ properties' values.
     <object-name>hpa-digit3</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>10</factor>
-    <step>0.01</step>
-    <bias>0.0005</bias>
+    <step> 0.0100 </step>
+    <bias> 0.0005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -823,12 +828,12 @@ properties' values.
     <object-name>hpa-digit4</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>100</factor>
-    <step>0.001</step>
-    <bias>0.0005</bias>
+    <step> 0.0010 </step>
+    <bias> 0.0005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -868,12 +873,12 @@ properties' values.
     <object-name>inhg-digit2</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>0.01</factor>
-    <step>10</step>
-    <bias>0.005</bias>
+    <step> 10.000 </step>
+    <bias>  0.005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -882,12 +887,12 @@ properties' values.
     <object-name>inhg-digit3</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>0.1</factor>
-    <step>1</step>
-    <bias>0.005</bias>
+    <step> 1.000 </step>
+    <bias> 0.005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -896,12 +901,12 @@ properties' values.
     <object-name>inhg-digit4</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>1</factor>
-    <step>0.1</step>
-    <bias>0.005</bias>
+    <step> 0.100 </step>
+    <bias> 0.005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -910,12 +915,12 @@ properties' values.
     <object-name>inhg-digit5</object-name>
     <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>10</factor>
-    <step>0.01</step>
-    <bias>0.005</bias>
+    <step> 0.010 </step>
+    <bias> 0.005 </bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -929,8 +934,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.apButton();
-     </script>
+          kap140.apButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -944,8 +949,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.hdgButton();
-     </script>
+          kap140.hdgButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -959,8 +964,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.navButton();
-     </script>
+          kap140.navButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -974,8 +979,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.aprButton();
-     </script>
+          kap140.aprButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -989,8 +994,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.altButton();
-     </script>
+          kap140.altButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -1004,8 +1009,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.revButton();
-     </script>
+          kap140.revButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -1019,8 +1024,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.downButton();
-     </script>
+          kap140.downButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -1034,8 +1039,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.upButton();
-     </script>
+          kap140.upButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -1049,8 +1054,8 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.armButton();
-     </script>
+          kap140.armButton();
+        </script>
       </binding>
     </action>
   </animation>
@@ -1065,15 +1070,15 @@ properties' values.
       <binding>
         <command>nasal</command>
         <script>
-      kap140.baroButtonPress();
-     </script>
+          kap140.baroButtonPress();
+        </script>
       </binding>
       <mod-up>
         <binding>
           <command>nasal</command>
           <script>
-       kap140.baroButtonRelease();
-      </script>
+            kap140.baroButtonRelease();
+          </script>
         </binding>
       </mod-up>
     </action>
@@ -1166,4 +1171,3 @@ properties' values.
   </animation>
   
 </PropertyList>
-

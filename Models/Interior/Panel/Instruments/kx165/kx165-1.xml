@@ -25,7 +25,6 @@
   
   Updated Nov 2012 by Helijah
   -->
-
   <params>
     <comm-serviceable>instrumentation/comm[0]/serviceable</comm-serviceable>
     <nav-serviceable>instrumentation/nav[0]/serviceable</nav-serviceable>
@@ -175,11 +174,13 @@
     <object-name>NavStby</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
     </emission>
   </animation>
 
@@ -190,11 +191,13 @@
     <object-name>NavKnobs</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
-      <red>   0.2 </red>
-      <green> 0.1 </green>
-      <blue>  0.1 </blue>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 

@@ -9,7 +9,7 @@ data 8
 aeration
 texture "aeration.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 399
 0.001891 0.023526 -0.023961
 0.001891 0.021724 -0.024547
