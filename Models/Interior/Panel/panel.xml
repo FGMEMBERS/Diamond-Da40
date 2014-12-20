@@ -17,11 +17,14 @@
   <animation>
     <type>material</type>
     <object-name>facepanel</object-name>
+    <condition>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
     <emission>
+      <factor-prop>controls/lighting/floods-lights</factor-prop>
       <red>   0.8 </red>
-      <green> 0.4 </green>
-      <blue>  0.4 </blue>
-      <factor-prop>controls/lighting/panel-dim</factor-prop>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
     </emission>
   </animation>
 
@@ -113,7 +116,7 @@
       <y-m> -0.168 </y-m>
       <z-m> -0.064 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- KI206 -->
   <model>
@@ -129,7 +132,7 @@
   <model>
     <path>Aircraft/Diamond-Da40/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m> -0.001 </x-m>
       <y-m> -0.168 </y-m>
       <z-m>  0.116 </z-m>
     </offsets>

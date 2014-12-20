@@ -174,8 +174,10 @@
     <object-name>NavStby</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -189,8 +191,10 @@
     <object-name>NavKnobs</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
     </condition>
     <emission>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
       <red>   0.2 </red>
       <green> 0.1 </green>
       <blue>  0.1 </blue>
